@@ -9,8 +9,7 @@ namespace DamageValues
 {
     public class DamageValues : Mod, IGlobalSettings<Settings>
     {
-        public const string SpritesFolder = "DamageValues";
-        public static readonly string ImagesDir = Path.Combine(Path.GetFullPath(Application.dataPath), "Managed", "Mods", SpritesFolder);
+        public static readonly string ImagesDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location); // the path where the mod dll is located
         private List<Sprite> _sprites = new();
         private static int _tileSize;
         private static Settings _settings = new Settings();
