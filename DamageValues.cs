@@ -51,7 +51,7 @@ namespace DamageValues
         {
             orig(self, hitInstance);
 
-            int damage = hitInstance.DamageDealt;
+            int damage = (int)(hitInstance.DamageDealt * hitInstance.Multiplier);
             var damageValue = new GameObject("Damage Value");
             int numDigits = 0;
             do
