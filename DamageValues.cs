@@ -16,7 +16,7 @@ namespace DamageValues
 
         public override string GetVersion() => Assembly.GetExecutingAssembly().GetName().Version.ToString();
 
-        public DamageValues() : base("Damage Values") { }
+        public DamageValues() : base("DamageValues") { }
 
         public override void Initialize()
         {
